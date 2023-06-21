@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 1</title>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h2>Syllabus</h2>
+     <p><strong class="Name">Week 1</strong> &nbsp; &nbsp;
+      <strong>Introduction, Ciphers, and JavaScript - 1/12,Miles</strong></p>
+       <p>&nbsp; &nbsp;
+        <a href="https://onecompiler.com/html/3zc9epvxm" style="color:Black" id="week11">Slides</a>&nbsp; &nbsp;
+       <a href="https://onecompiler.com/html/3zc9epvxm" style="color:Black"  id="week12">Starter Code</a>&nbsp; &nbsp;
+      <a href="https://onecompiler.com/html/3zc9epvxm" style="color:Black" id="week13">Checkoff Form</a>&nbsp; &nbsp;
+     <a href="https://onecompiler.com/html/3zc9epvxm" style="color:Black" id="week14">Solution</a>&nbsp; &nbsp;
+     </p> 
+      
+         <p><strong class="Name">Week 2</strong> &nbsp; &nbsp;   
+          <strong>Sentimnet Analysis and Refugee Tweets - 1/19,Matthew</strong></p>
+           <p>&nbsp; &nbsp;
+            <a href="https://onecompiler.com/html/3zc9epvxm" style="color:Black" id="week21">Slides</a>&nbsp; &nbsp;
+             <a href="https://onecompiler.com/html/3zc9epvxm" style="color:Black" id="week22">Starter Code</a>&nbsp; &nbsp;
+            <a href="https://onecompiler.com/html/3zc9epvxm" style="color:Black" id="week23">Checkoff Form</a>&nbsp; &nbsp;
+           <a href="https://onecompiler.com/html/3zc9epvxm" style="color:Black" id="week24">Solution (Basic)</a>&nbsp; &nbsp;
+         <a href="https://onecompiler.com/html/3zc9epvxm" style="color:Black" id="week25">Solution (TF-IDF,Advanced)</a>&nbsp; &nbsp;
+      </p>
+          
+           <p><strong class="Name">Week 3</strong> &nbsp; &nbsp;   
+            <strong>Cancer Diagnosis with K-Nearest Neighbors - 1/6,Sarah</strong></p>
+             <p>&nbsp; &nbsp;
+            <a href="https://onecompiler.com/html/3zc9epvxm" style="color:Black" id="week31">Slides</a>
+           <a href="https://onecompiler.com/html/3zc9epvxm" style="color:Black" id="week32">Checkoff Form</a>
+      </p> 
+          
+          <p><strong class="Name">Week 4</strong> &nbsp; &nbsp;   
+           <strong>Mental Health and ELIZA - 2/2,Joe</strong></p>
+            <p>&nbsp; &nbsp;
+           <a href="https://onecompiler.com/html/3zc9epvxm" style="color:Black" id="week41">Slides</a>
+          <a href="https://onecompiler.com/html/3zc9epvxm" style="color:Black" id="week42">Starter Code</a>
+         <a href="https://onecompiler.com/html/3zc9epvxm" style="color:Black" id="week43">Checkoff Form</a>
+      </p>
+        
+          <p><strong class="Name">Week 5</strong> &nbsp; &nbsp;   
+           <strong>Algorithmic Bias - 2/9,Theo</strong></p> 
+            <p>&nbsp; &nbsp;
+           <a href="https://onecompiler.com/html/3zc9epvxm" style="color:Black" id="week51">Slides</a>
+         <a href="https://onecompiler.com/html/3zc9epvxm" style="color:Black" id="week52">Checkoff Form</a>
+      </p>
+        
+          <p><strong class="Name">Week 6</strong> &nbsp; &nbsp;   
+           <strong>Open Source Software - 2/16,Miles</strong></p>
+            <p>&nbsp; &nbsp;
+           <a href="https://onecompiler.com/html/3zc9epvxm" style="color:Black" id="week61">Slides</a>
+         <a href="https://onecompiler.com/html/3zc9epvxm" style="color:Black" id="week62">Checkoff Form</a>
+      </p>
+         
+          <p><strong class="Name">Week 7</strong> &nbsp; &nbsp;   
+           <strong>CS+ Climate Change - 2/23,Liza</strong></p> 
+            <p>&nbsp; &nbsp;
+           <a href="https://onecompiler.com/html/3zc9epvxm" style="color:Black" id="week71">Slides</a>
+          <a href="https://onecompiler.com/html/3zc9epvxm" style="color:Black" id="week72">Checkoff Form</a>
+         <a href="https://onecompiler.com/html/3zc9epvxm" style="color:Black" id="week73">Solution</a>
+      </p>
+        
+          <p><strong class="Name">Week 8</strong> &nbsp; &nbsp;   
+           <strong>Ethical Hacking and Web Security - 3/2,Cooper</strong></p> 
+            <p><strong class="Name">Week 9</strong> &nbsp; &nbsp;   
+           <strong>CS+ Social Good Speaker Panel - 3/9</strong></p> 
+          <p><strong class="Name">Week 10</strong> &nbsp; &nbsp;   
+         <strong>No Class!</strong></p> 
+  </body>
+</html>
+

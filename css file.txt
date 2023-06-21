@@ -1,0 +1,137 @@
+body{
+    padding: 30px;
+}
+  .Name
+  {
+    border: 3px solid Lightgrey;
+    width: 50%;
+    background-color: Lightgrey; 
+
+  }
+  #week11
+  {
+    border: 3px solid Plum;
+    width: 50%;
+    background-color: Plum; 
+  }
+  #week12
+  {
+    border: 3px solid CornflowerBlue;
+    width: 50%;
+    background-color: CornflowerBlue; 
+  }
+  #week13
+  {
+    border: 3px solid LightCoral;
+    width: 50%;
+    background-color: LightCoral; 
+  }
+  #week14
+  {
+    border: 3px solid MediumSeaGreen;
+    width: 50%;
+    background-color: MediumSeaGreen; 
+  }
+   #week21
+  {
+    border: 3px solid Plum;
+    width: 50%;
+    background-color: Plum; 
+  }
+  #week22
+  {
+    border: 3px solid CornflowerBlue;
+    width: 50%;
+    background-color: CornflowerBlue; 
+  }
+  #week23
+  {
+    border: 3px solid LightCoral;
+    width: 50%;
+    background-color: LightCoral; 
+  }
+  #week24
+  {
+    border: 3px solid MediumSeaGreen;
+    width: 50%;
+    background-color: MediumSeaGreen; 
+  }
+  #week25
+  {
+    border: 3px solid MediumSeaGreen;
+    width: 50%;
+    background-color: MediumSeaGreen; 
+  }
+  #week31
+  {
+    border: 3px solid Plum;
+    width: 50%;
+    background-color: Plum; 
+  }
+  #week32
+  {
+    border: 3px solid LightCoral;
+    width: 50%;
+    background-color: LightCoral; 
+  }
+    #week41
+  {
+    border: 3px solid Plum;
+    width: 50%;
+    background-color: Plum; 
+  }
+  #week42
+  {
+    border: 3px solid CornflowerBlue;
+    width: 50%;
+    background-color: CornflowerBlue; 
+  }
+  #week43
+  {
+    border: 3px solid LightCoral;
+    width: 50%;
+    background-color: LightCoral; 
+  }
+  #week51
+  {
+    border: 3px solid Plum;
+    width: 50%;
+    background-color: Plum; 
+  }
+  #week52
+  {
+    border: 3px solid LightCoral;
+    width: 50%;
+    background-color: LightCoral; 
+  }
+  #week61
+  {
+    border: 3px solid Plum;
+    width: 50%;
+    background-color: Plum; 
+  }
+  #week62
+  {
+    border: 3px solid LightCoral;
+    width: 50%;
+    background-color: LightCoral; 
+  }
+  #week71
+  {
+    border: 3px solid Plum;
+    width: 50%;
+    background-color: Plum; 
+  }
+  #week72
+  {
+    border: 3px solid LightCoral;
+    width: 50%;
+    background-color: LightCoral; 
+  }
+  #week73
+  {
+    border: 3px solid MediumSeaGreen;
+    width: 50%;
+    background-color: MediumSeaGreen; 
+  }  
+ 
