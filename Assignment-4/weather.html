@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Weather Forecast</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <meta charset="UTF-8" />
+
+    <!--Initializing CSS file-->
+     <link rel="stylesheet" href="weather-style.css" />
+
+    <!--Font Awesome 5 CDN (5.15.4) Version--> 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+ 
+  <style>
+
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-image: url(../Web-4/weather-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+.container
+{
+  padding: 20px;
+  color: white;
+}
+
+.realtime-info
+{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.date-container
+{
+  font-weight: 100;
+}
+.date-container .time
+{
+ font-size: 70px;
+}
+
+.date-container #am-pm
+{
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.date-container .date-container
+{
+  font-size: 30px;
+}
+
+.place-box
+{
+  text-align: end;
+}
+
+.place-box.time-zone
+{
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.place-box .country
+{
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.realtime-info .others
+{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(24, 24, 27, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+  border: 1px solid #eee;
+}
+
+.realtime-info .others .weather-measure
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.future-forecast
+{
+  background: rgba(24, 24, 27, 0.8);
+  color: white;
+  padding: 25px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.future-forecast .today 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.future-forecast .today .today
+{
+  padding: 5px 15px;
+  background: #3c3c44;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.future-forecast .today .temp
+{
+  font-size: 40px;
+  padding-top: 15px;
+}
+
+.future-forecast .weather-forecast 
+{
+  display: flex;
+}
+
+.weather-forecast .weather-forecast-measure
+{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin: 0 10px;
+   border: 1px solid #eee;
+   border-radius: 10px;
+   padding: 15px;
+}
+
+.weather-forecast .weather-forecast-measure .today
+{
+  padding: 5px 15pc;
+  background: #3c3c44;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.weather-forecast .weather-forecast-measure .temp
+{
+  font-weight: 100;
+}
+
+@media only screen and (max-width:730px)
+{
+  .future-forecast
+  {
+    justify-content: start;
+    align-items: none;
+    overflow-y: scroll;
+  }
+}
+
+</style>
+
+  </head>
+  <body>
+     <div class="container">
+      <div class="realtime-info">
+
+        <div class="date-container">
+          <div class="time" id="time">
+            10:34 <span id="am-pm">PM</span>
+          </div>
+
+          <div class="date" id="date">
+            Monday, 24 May
+          </div>
+
+          <div class="others" id="realtime-weather-measure">
+             <div class="weather-measure">
+               <div>Humidity</div>
+               <div>95.2%</div>
+             </div>
+
+             <div class="weather-measure">
+              <div>Temparature</div>
+              <div>25.6 C</div>
+            </div>
+
+            <div class="weather-measure">
+              <div>Pressure</div>
+              <div>1000mb</div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="place-box">
+          <div class="time-zone" id="time-zone">Dhaka</div>
+          <div class="country" id="country">BD</div>
+        </div>
+      </div>
+    </div>
+      <div class="future-forecast">
+        <div class="today" id="current-temp">
+          <img src=" https://openweathermap.org/img/wn/10d@2x.png" class="Weather-icon" alt="Weather-icon" >
+          <div class="other">
+            <div class="day">Monday</div>
+            <div class="temp">Night - 25.6&#176</div>
+            <div class="temp">Day - 35.6&#176</div>
+          </div>
+        </div>
+
+        <div class="weather-forecast" id="weather-forecast">
+         <div class="weather-forecast-measure">
+          <div class="day">Tuesday</div>
+           <img src=" https://openweathermap.org/img/wn/10d@2x.png" class="Weather-icon" alt="Weather-icon" >
+            <div class="temp">Night - 25.6&#176</div>
+           <div class="temp">Day - 35.6&#176</div>
+         </div>
+
+         <div class="weather-forecast-measure">
+          <div class="day">Wednesday</div>
+           <img src=" https://openweathermap.org/img/wn/10d@2x.png" class="Weather-icon" alt="Weather-icon" >
+            <div class="temp">Night - 25.6&#176</div>
+           <div class="temp">Day - 35.6&#176</div>
+         </div>
+
+         <div class="weather-forecast-measure">
+          <div class="day">Thursday</div>
+           <img src=" https://openweathermap.org/img/wn/10d@2x.png" class="Weather-icon" alt="Weather-icon" >
+            <div class="temp">Night - 25.6&#176</div>
+           <div class="temp">Day - 35.6&#176</div>
+         </div>
+
+         <div class="weather-forecast-measure">
+          <div class="day">Friday</div>
+           <img src=" https://openweathermap.org/img/wn/10d@2x.png" class="Weather-icon" alt="Weather-icon" >
+            <div class="temp">Night - 25.6&#176</div>
+           <div class="temp">Day - 35.6&#176</div>
+         </div>
+
+         <div class="weather-forecast-measure">
+          <div class="day">Sunday</div>
+           <img src=" https://openweathermap.org/img/wn/10d@2x.png" class="Weather-icon" alt="Weather-icon" >
+            <div class="temp">Night - 25.6&#176</div>
+           <div class="temp">Day - 35.6&#176</div>
+         </div>
+
+        </div>
+
+    </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+      <!--
+        <script src="script.js"></script>
+      
+      
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+  const apiKey = 'f94b58b6b8b7ba195ae3b2593cf6a710';
+  const city = 'Dhaka'; // Replace with the desired city name
+  const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
+
+  // Function to fetch weather data and update the UI
+  function fetchWeatherData() {
+    fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+        const forecastData = data.list;
+
+        // Update current weather
+        const currentWeather = forecastData[0];
+        const currentTempNight = currentWeather.main.temp_min;
+        const currentTempDay = currentWeather.main.temp_max;
+        const currentWeatherIcon = currentWeather.weather[0].icon;
+        const currentDay = new Date(currentWeather.dt_txt).toLocaleDateString('en', { weekday: 'long' });
+
+        document.getElementById('current-temp').innerHTML = `
+          <img src="https://openweathermap.org/img/wn/${currentWeatherIcon}.png" class="Weather-icon" alt="Weather-icon">
+          <div class="other">
+            <div class="day">${currentDay}</div>
+            <div class="temp">Night - ${currentTempNight}&#176;C</div>
+            <div class="temp">Day - ${currentTempDay}&#176;C</div>
+          </div>
+        `;
+
+        // Update forecast for the next 5 days
+        const weatherForecastContainer = document.getElementById('weather-forecast');
+        weatherForecastContainer.innerHTML = '';
+
+        for (let i = 1; i < forecastData.length; i += 8) {
+          const forecast = forecastData[i];
+          const tempNight = forecast.main.temp_min;
+          const tempDay = forecast.main.temp_max;
+          const weatherIcon = forecast.weather[0].icon;
+          const day = new Date(forecast.dt_txt).toLocaleDateString('en', { weekday: 'long' });
+
+          weatherForecastContainer.innerHTML += `
+            <div class="weather-forecast-measure">
+              <div class="day">${day}</div>
+              <img src="https://openweathermap.org/img/wn/${weatherIcon}.png" class="Weather-icon" alt="Weather-icon">
+              <div class="temp">Night - ${tempNight}&#176;C</div>
+              <div class="temp">Day - ${tempDay}&#176;C</div>
+            </div>
+          `;
+        }
+      })
+      .catch(error => console.error('Error fetching weather data:', error));
+  }
+
+  // Call the function to fetch weather data when the page loads
+  fetchWeatherData();
+</script>
+
+-->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+  // Replace 'YOUR_API_KEY' with your actual OpenWeatherMap API key
+  const apiKey = 'f94b58b6b8b7ba195ae3b2593cf6a710';
+  const city = 'Dhaka'; // Replace with the desired city name
+  const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
+
+  // Function to fetch weather data and update the UI
+  function fetchWeatherData() {
+    fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+        const realtimeWeather = data.list[0];
+        const currentTempNight = realtimeWeather.main.temp_min;
+        const currentTempDay = realtimeWeather.main.temp_max;
+        const currentWeatherIcon = realtimeWeather.weather[0].icon;
+        const currentDay = new Date(realtimeWeather.dt_txt).toLocaleDateString('en', { weekday: 'long' });
+
+        document.getElementById('current-temp').innerHTML = `
+          <img src="https://openweathermap.org/img/wn/${currentWeatherIcon}.png" class="Weather-icon" alt="Weather-icon">
+          <div class="other">
+            <div class="day">${currentDay}</div>
+            <div class="temp">Night - ${currentTempNight}&#176;C</div>
+            <div class="temp">Day - ${currentTempDay}&#176;C</div>
+          </div>
+        `;
+
+        const weatherForecastContainer = document.getElementById('weather-forecast');
+        weatherForecastContainer.innerHTML = '';
+
+        const forecastData = data.list.slice(1, 6); // Get the next 5-day forecast data
+
+        forecastData.forEach(forecast => {
+          const tempNight = forecast.main.temp_min;
+          const tempDay = forecast.main.temp_max;
+          const weatherIcon = forecast.weather[0].icon;
+          const day = new Date(forecast.dt_txt).toLocaleDateString('en', { weekday: 'long' });
+
+          weatherForecastContainer.innerHTML += `
+            <div class="weather-forecast-measure">
+              <div class="day">${day}</div>
+              <img src="https://openweathermap.org/img/wn/${weatherIcon}.png" class="Weather-icon" alt="Weather-icon">
+              <div class="temp">Night - ${tempNight}&#176;C</div>
+              <div class="temp">Day - ${tempDay}&#176;C</div>
+            </div>
+          `;
+        });
+      })
+      .catch(error => console.error('Error fetching weather data:', error));
+  }
+
+  // Call the function to fetch weather data when the page loads
+  fetchWeatherData();
+</script>
+
+
+
+
+  </body>
+</html>
